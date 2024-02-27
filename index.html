@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Dream Farm</title>
+
+<link rel='stylesheet' type='text/css' href='css/style.css'>
+<link rel='shortcut icon' href='images/Dream.png'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+<!--import font family-->
+
+
+</head>
+
+<body id = "homepage">
+    <!-- navigation start-->
+    <nav class= "navigation">
+        <a href = "#" class="logo">
+            <span> Dream </span> Farm
+        </a>
+
+        <!--menu-->
+        <ul class = "menu">
+            <li><a href="#" class="active"> Home </a></li>
+            <li><button href="#" class="scroll-button" onclick="scrollToTargetSection()"> Categories </button></li>
+            <li><a href="#"> Contact Us </a></li>        
+        </ul>
+
+
+
+    </nav>
+<!-- navigation ends-->
+   <!--Search banner-->
+<section id="search-banner">
+
+    <div class="search-banner-text">
+        <h1>
+            Check For Your Daily Groceries
+        </h1>
+        <strong>#Choose Organic</strong>
+
+        <!--search-box-->
+        <form action="" method="post" class="search-box">
+
+            <!--icon-->
+            <i class="fas fa-search"></i>
+            <!--input-->
+            <input type="text" name="search" placeholder="What are you looking for?" class="search-input" required>
+            <!--btn-->
+            <input type="submit" class="search-btn" value="Search">
+        </form>
+    </div>
+</section>
+<!--Category-->
+<section id="category">
+<!--heading-->
+  <div class="category-heading">
+    <h2>Category</h2>
+    <span> All </span>
+  </div>
+
+  <!--box-container-->
+  <div class="category" id="targetSection">
+    <!--box--->
+    <a href="CategoryA.html" class="category-box">
+        <img src="images/vegetable.png" alt="Vegetables">
+        <span>Vegetables</span>
+    </a>
+
+    <a href="CategoryB.html" class="category-box">
+            <img src="images/fruit.png" alt="Fruits">
+            <span>Fruits</span>
+    </a>
+    
+  </div>
+
+</section>
+
+<!--category-end-->
+<!--Popular products-->
+
+<script>
+    function scrollToTargetSection() {
+        var targetSection = document.getElementById("targetSection");
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+
+</html>
+

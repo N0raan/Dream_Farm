@@ -1,0 +1,102 @@
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    padding: 45px;
+    font-family: poppins;
+    
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+    justify-content: flex-end;
+}
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 3px 10px;
+    margin: 0px 15px;
+    color: #3b3b3b;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+}
+.menu li a:hover,
+.menu .active{
+    color: #40aa54;
+    transition: all ease 0.3s;
+}
+
+#Veg{
+    margin: 5px auto;
+}
+
+.Veg-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Veg-heading h3{
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: #202020;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 40px 0px;
+}
+
+.product-box{
+    width: 250px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.product-box img{
+    width: 90%;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+}
+.product-box strong{
+    color: #202020;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.product-box .quantity{
+    color: #949494;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.product-box .price{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #393939;
+}
